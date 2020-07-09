@@ -5,14 +5,14 @@
 ## 如何更新
 [參考網站](https://ganjinzero.github.io/2019/01/17/%E5%9C%A8PyPI%E4%B8%8A%E5%8F%91%E5%B8%83%E5%B9%B6%E6%9B%B4%E6%96%B0%E8%87%AA%E5%B7%B1%E7%9A%84python-package/)
 ### 把package整理成如下形式
-'''
+```
 /example_pkg
   /example_pkg
     __init__.py
   setup.py
   LICENSE
   README.md
-'''
+```
 
 ### 編輯setup.py
 每次都要更新版本號
@@ -20,11 +20,11 @@
 ### 刪除dist資料夾
 
 ### 生成distribution archives
-"""
+```
 python setup.py sdist bdist_wheel
-"""
+```
 若未刪除dist 可以用
-"""
+```
 twine upload --skip-existing dist/*
-"""
+```
 忽略已建立的dist
