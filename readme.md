@@ -27,5 +27,10 @@ python setup.py sdist bdist_wheel
 twine upload --skip-existing dist/*
 ```
 忽略已建立的dist
+## 上傳distribution archives
+twine upload dist/*
+或者
+python -m twine upload dist/*
+
 
 [參考網站](https://ganjinzero.github.io/2019/01/17/%E5%9C%A8PyPI%E4%B8%8A%E5%8F%91%E5%B8%83%E5%B9%B6%E6%9B%B4%E6%96%B0%E8%87%AA%E5%B7%B1%E7%9A%84python-package/)
